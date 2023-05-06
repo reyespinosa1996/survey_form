@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>freeCodeCamp Survey Form</title>
-	<style type="text/css">
-
-	</style>
-</head>
-	<body>
-		<h1 id="title">freeCodeCamp Survey Form</h1>
-			<p id="description">Thank you for taking the time to help us improve the platform</p>
-			<form id="survey-form">
-				<fieldset>
+	<title>Cosmos Forniture Survey Form</title>
+	<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="container">
+		<h1 id="title" class="header text-center">Cosmos Forniture Survey Form</h1>
+			<p class="description text-center" id="description">Thank you for taking the time to help us improve our services</p>
+			<form id="survey-form" class="text-center form-group">
 				<label id="name-label" for="name">Name 
 					<input required type="text" id="name" placeholder="Enter your name here">
 				</label>
-				<label id="email-label" for"mail">Email 
-					<input required id="mail" type="mail" placeholder="Enter your email here">
+				<label id="email-label" for="email">Email 
+					<input required id="email" type="email" placeholder="Enter your email here">
 				</label>
-				<label id="number-label" for"age">Age
-					<input required id="age" type="number" min="13" max="100" placeholder="Age">
+				<label id="number-label" for="number">Age
+					<input required id="number" type="number" min="18" max="120" placeholder="Age">
 				</label>
+				<hr>
+				<fieldset>
+					<select id="dropdown" name="role">Which option best describes your current role?
+						<option value="">Select your role</option>
+						<option value="owner">Business owner</option>
+						<option value="carpenter">Carpenter</option>
+						<option value="home-owner">Home owner</option>
+						<option value="other">Other</option>
+					</select>
 				</fieldset>
+				<fieldset>
+					<label class="text-center">Will you recommend Cosmos Forniture products to a friend?</label>
+					<label class="input-radio"><input type="radio" name="option" value="1"> Yes</label>
+					<label class="input-radio"><input type="radio" name="option" value="2"> No</label>
+					<label class="input-radio"><input type="radio" name="option" value="3"> Maybe</label>
+				</fieldset>
+				<fieldset>
+					<label>Which of these products should we improve?</label>
+					<label><input type="checkbox" value="desk">Desk</label>
+					<label><input type="checkbox" value="door">Door</label>
+					<label><input type="checkbox" value="table">Table</label>
+					<label><input type="checkbox" value="chair">Chair</label>
+				</fieldset>
+				<fieldset>
+					<label>Is there anything else you would like to say to us?</label>
+					<textarea rows="5" cols="33" placeholder="Product suggestions or just your thougs about our services"></textarea>
+				</fieldset>
+				<button id="submit">Submit</button>
 			</form>	
 			
 	</body>
